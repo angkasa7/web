@@ -9,11 +9,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <!-- link css bootstrap end -->
 
+  <!-- internal css style -->
   <style>
     .nav-hover:hover {
       background-color: #0362b0;
     }
+    .brosur:hover {
+      cursor: pointer;
+    }
   </style>
+  <!-- internal css style end -->
 </head>
 <body id="home" class="bg-primary-subtle">
 
@@ -93,7 +98,7 @@
             <a class="nav-link active text-white" aria-current="page" href="#home">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Fasilitas</a>
+            <a class="nav-link text-white" href="#ppdb">PPDB</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -101,9 +106,9 @@
               Tentang Sekolah
             </a>
             <ul class="dropdown-menu" style="background-color: #012D50;">
-              <li><a class="dropdown-item text-white nav-hover" href="#">Visi Misi</a></li>
-              <li><a class="dropdown-item text-white nav-hover" href="#">Kurikulum</a></li>
-              <li><a class="dropdown-item text-white nav-hover" href="#">Kegiatan</a></li>
+              <li><a class="dropdown-item text-white nav-hover" href="#visi">Visi Misi</a></li>
+              <li><a class="dropdown-item text-white nav-hover" href="#">Fasilitas</a></li>
+              <li><a class="dropdown-item text-white nav-hover" href="#kegiatan">Kegiatan</a></li>
               <li><hr class="dropdown-divider bg-white"></li>
               <li><a class="dropdown-item text-white nav-hover" href="#">Contact Us</a></li>
             </ul>
@@ -121,7 +126,7 @@
   <!-- navbar 2 end -->
 
   <main>
-    <!-- carousel -->
+    <!-- section 1 carousel photo gallery -->
     <section class="container">
       <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -175,10 +180,10 @@
         </button>
       </div>
     </section>
-    <!-- carousel end -->
+    <!-- section 1 carousel photo gallery end -->
 
-    <!-- section 1 -->
-    <section class="album mt-5">
+    <!-- section 2 kegiatan -->
+    <section id="kegiatan" class="album mt-5">
       <div class="container">
   
         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-4">
@@ -214,10 +219,10 @@
         </div>
       </div>
     </section>
-    <!-- section 1 end -->
+    <!-- section 2 kegiatan end -->
 
-    <!-- section 2 -->
-    <section class="container px-4">
+    <!-- section 3 visi -->
+    <section id="visi" class="container px-4">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-center">
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="assets/guru01.png" class="d-block mx-lg-auto img-fluid rounded" alt="Bapak dan Ibu Guru" width="700" height="500" loading="lazy">
@@ -232,10 +237,10 @@
         </div>
       </div>
     </section>
-    <!-- section 2 end -->
+    <!-- section 3 visi end -->
 
-    <!-- section 3 -->
-    <section class="container px-4" id="custom-cards">
+    <!-- section 4 misi -->
+    <section id="misi" class="container px-4">
       <h2 class="pb-2 mb-4 border-bottom border-black">Misi Sekolah Angkasa</h2>
   
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 pb-5">
@@ -270,10 +275,10 @@
         </div>
       </div>
     </section>
-    <!-- section 3 end -->
+    <!-- section 4 misi end -->
 
-    <!-- section 4 -->
-    <section class="container px-4" id="icon-grid">
+    <!-- section 5 program unggulan -->
+    <section id="unggulan" class="container px-4">
       <h2 class="pb-2 border-bottom border-black">Program Unggulan Sekolah Angkasa</h2>
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
@@ -284,7 +289,7 @@
           </svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Angkasa Cerdas Spiritual</h3>
-            <p>Ilmu Agama yang mendalam yang dilakukan dengan pembiasaan dan keteladanan. Dilengkapi Metode Tahfizh Ummi.</p>
+            <p>Ilmu Agama yang mendalam yang dilakukan dengan pembiasaan dan keteladanan. Dilengkapi <a href="https://www.google.com/search?q=tahfidz+metode+ummi&oq=tahfizh+metode&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCAgCEAAYDRgeMggIAxAAGA0YHjIICAQQABgNGB4yCAgFEAAYDRgeMggIBhAAGA0YHjIICAcQABgNGB4yCAgIEAAYDRgeMggICRAAGA0YHtIBCjEwMjMyajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8" target="_blank">Metode Tahfizh Ummi</a>.</p>
           </div>
         </div>
         <div class="col d-flex align-items-start">
@@ -356,9 +361,9 @@
         </div>
       </div>
     </section>
-    <!-- section 4 end -->
+    <!-- section 5 program unggulan end -->
 
-    <!-- section 5 -->
+    <!-- section 6 embed youtube -->
     <section class="album pb-3">
       <div class="container">
   
@@ -383,7 +388,91 @@
         </div>
       </div>
     </section>
-    <!-- section 5 end -->
+    <!-- section 6 embed youtube end -->
+
+    <!-- section 7 brosur -->
+    <section class="album py-5" id="ppdb">
+      <div class="container">
+
+        <h2 class="mb-4 border-bottom border-black">Penerimaan Peserta Didik Baru</h2>
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card shadow-sm bg-primary-subtle bg-gradient">
+              <img class="brosur" src="./assets/brosur1.jpg" alt="brosur 1" data-bs-toggle="modal" data-bs-target="#modalBrosur1"/>
+              <div class="card-body">
+                <p class="card-text">Brosur PPDB halaman 1</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalBrosur1">Perbesar</button>
+                    <a href="https://forms.gle/TC4s2Pf3qWqa5LKTA" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Pendaftaran</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm bg-primary-subtle bg-gradient">
+              <img class="brosur" src="./assets/brosur2.jpg" data-bs-toggle="modal" data-bs-target="#modalBrosur2" alt="brosur 2"/>
+              <div class="card-body">
+                <p class="card-text">Brosur PPDB halaman 2</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalBrosur2">Perbesar</button>
+                    <a href="https://forms.gle/TC4s2Pf3qWqa5LKTA" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Pendaftaran</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+    <!-- modal brosur 1 -->
+    <div class="modal fade" id="modalBrosur1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="exampleModalLabel">Brosur PPDB halaman 1</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/brosur1.jpg" alt="brosur ppdb halaman 1"/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBrosur2">Brosur halaman 2</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal brosur 1 end -->
+    <!-- modal brosur 2 -->
+    <div class="modal fade" id="modalBrosur2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="exampleModalLabel">Brosur PPDB halaman 2</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/brosur2.jpg" alt="brosur ppdb halaman 2"/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBrosur1">Brosur halaman 1</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal brosur 2 end -->
+    <!-- section 7 brosur end -->
+
   </main>
 
   <!-- footer -->
